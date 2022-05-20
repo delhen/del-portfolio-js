@@ -23,7 +23,7 @@ export default function Home() {
         <PersonalCard />
       </Section>
       <div className='md:mt-12 md:p-24 p-12' id='home'>
-        <h1 className='md:text-2xl text-xl text-center font-light tracking-wider'>Hello! I'm Delian Hendardi</h1>
+        <h1 className='md:text-2xl text-xl text-center font-light tracking-wider'>Hello! I am Delian Hendardi</h1>
         <br />
         <div className='text-center md:text-base max-w-5xl mx-auto'>
           <p>A fresh graduate bachelor degree student from Bina Nusantara University, majoring in Computer Science. Have interest in software engineering especially in web development and data scientist especially in machine learning and data analyst. Professional Javascript and PHP web developer, both front-end and back-end. Consider as a person who proper at problem solving and planning, can work as either individual or team, and always curious learning something especially related to software engineer, data science, and mathematics. </p>
@@ -97,7 +97,7 @@ export default function Home() {
               </li>
               <li className='my-4'>
                 <p className='text-md font-semibold'>UI Designer</p>
-                <p>This is a minor skillset. Can design web and mobile interface that satisfies end-user based on design theories and "Oh this looks good" principle. Tools that I use are Adobe XD and Figma.</p>
+                <p>This is a minor skillset. Can design web and mobile interface that satisfies end-user based on design theories and &quot;Oh this looks good&quot; principle. Tools that I use are Adobe XD and Figma.</p>
               </li>
             </ul>
           </div>
