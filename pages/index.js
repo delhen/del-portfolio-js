@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Linkedin from '../components/Icon/Linkedin'
-import Instagram from '../components/Icon/Instagram'
-import Github from '../components/Icon/Github'
 import Navigation from '../components/Navigation/Navigation'
 import styles from '../styles/Home.module.css'
+import PersonalCard from '../components/PersonalCard/PersonalCard'
+import Section from '../components/Section/Section'
+import PersonalCardParallax from '../datainfo/PersonalCardParallax'
 
 export default function Home() {
   return (
@@ -15,41 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <header className="flex flex-col md:h-96 items-center p-4 justify-center bg-fixed w-full bg-bottom bg-cover bg-blend-overlay" style={
-        {
-          backgroundImage: `linear-gradient(135deg, rgba(7,89,133,1) 0%, rgba(72,207,237,1) 100%, rgba(10,113,168,1) 100%), 
-          url('https://images.unsplash.com/photo-1494043625957-ff6c03ea4206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80')`
-        }
-      }>
-        {/* option 2 */}
-        <div className='flex md:flex-row flex-col md:w-192 md:mt-10'>
-          <div className='md:mt-16 md:w-96 md:h-96 w-72 h-64 bg-slate-200'>
-            <Image src={'/images/profile.jpg'} width={'100%'} height={'100%'} layout='responsive' />
-          </div>
-          <div className='md:mt-16 md:w-96 md:h-96 w-72 bg-slate-200'>
-            <div className='md:pl-4 md:pt-4 p-4 mb-16'>
-              <h1 className='font-sans font-light tracking-wider md:text-2xl text-xl mt-6'>DELIAN HENDARDI</h1>
-              <h5 className='font-sans font-bold text-sm mt-2'>WEB DEVELOPER & MACHINE LEARNING ENGINEER</h5>
-              <hr />
-              <div className='mt-4'>
-                <p className='font-sans font-semibold text-sm'>Date of Birth</p>
-                <p className='font-sans text-xs'>February 14th, 2000</p>
-                <br />
-                <p className='font-sans font-semibold text-sm'>Email</p>
-                <p className='font-sans text-xs'>hendardidel@gmail.com</p>
-                <br />
-                <p className='font-sans font-semibold text-sm'>Location</p>
-                <p className='font-sans text-xs'>Tangerang City, Banten, Indonesia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='p-4 bg-sky-900 md:w-192 w-72 flex justify-center'>
-          <Linkedin />
-          <Instagram />
-          <Github />
-        </div>
-      </header>
+      <Section 
+          classesName={"flex flex-col md:h-96 items-center p-4 justify-center"} 
+          isParallaxBg 
+          urlImage={PersonalCardParallax.urlImg} 
+          gradientColor={PersonalCardParallax.gradientColor}>
+        <PersonalCard />
+      </Section>
       <div className='md:mt-12 md:p-24 p-12' id='home'>
         <h1 className='md:text-2xl text-xl text-center font-light tracking-wider'>Hello! I'm Delian Hendardi</h1>
         <br />
@@ -59,10 +31,9 @@ export default function Home() {
         <br />
         <div className='flex md:flex-row flex-col justify-center text-center'>
           <a href="#" className="bg-transparent hover:bg-sky-300 text-sky-500 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-500 hover:border-transparent rounded">Download CV</a>
-          <a href="#" className="bg-transparent hover:bg-sky-300 text-sky-500 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-500 hover:border-transparent rounded">Download Resume</a>
         </div>
       </div>
-      <div className='text-sky-50'> 
+      <div className='text-sky-50' id='portfolio'> 
         <h2 className='font-semibold bg-sky-900 p-4 text-xl tracking-wide text-center underline'>PORTFOLIO</h2>
         <div className='flex justify-center md:flex-row flex-col bg-fixed bg-center bg-cover bg-blend-overlay p-4' style={
         {
@@ -106,7 +77,7 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div className='p-8 text-center'>
+      <div className='p-8 text-center' id="skills">
         <h2 className='font-semibold text-xl tracking-wide underline'>SKILLS</h2>
         <div className='flex justify-around md:flex-row flex-col mt-4 md:px-16'>
           <div className='text-left md:w-4/12'>
@@ -158,7 +129,7 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div className='p-8 text-left bg-sky-900 text-sky-50'>
+      <div className='p-8 text-left bg-sky-900 text-sky-50' id='exp'>
         <h2 className='font-semibold text-xl tracking-wide text-center underline'>EXPERIENCE</h2>
         <div className='flex md:flex-row flex-col justify-around'>
           <div className='md:w-4/12 m-4'>
@@ -193,7 +164,7 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div className='p-8 md:text-center'>
+      <div className='p-8 md:text-center' id="edu">
         <h2 className='font-semibold text-xl tracking-wide text-center underline'>EDUCATION</h2>
         <ul>
           <li className='my-4'>
@@ -214,7 +185,7 @@ export default function Home() {
         </ul>
       </div>
       <hr />
-      <div className='p-8 text-left bg-sky-900 text-sky-50'>
+      <div className='p-8 text-left bg-sky-900 text-sky-50' id='certif'>
         <h2 className='font-semibold text-xl tracking-wide text-center underline'>CERTIFICATE</h2>
         <div className='flex md:flex-row flex-col justify-center p-4'>
           <a href="#" className="bg-transparent hover:bg-sky-700 text-sky-50 font-semibold hover:text-white py-2 px-4 mx-2 mt-2 border border-sky-50 hover:border-transparent rounded">Panitia Hackathon BPJS Kesehatan 2021</a>
