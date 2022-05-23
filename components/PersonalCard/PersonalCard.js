@@ -25,14 +25,16 @@ const PersonalCard = () => {
                             <br />
                             <p className='font-sans font-semibold text-sm'>Location</p>
                             <p className='font-sans text-xs'>{InformationCard.location}</p>
+                            <br />
+                            <p className='font-sans font-semibold text-sm'>Education</p>
+                            <p className='font-sans text-xs'>{InformationCard.education}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='p-4 bg-sky-900 md:w-192 w-72 flex justify-center'>
-                <Linkedin />
-                <Instagram />
-                <Github />
+                <a href="https://www.linkedin.com/in/delian-hendardi/" target={"_blank"} className="hover:opacity-80 active:opacity-80 opacity-100"><Linkedin /></a>
+                <a href="https://github.com/delhen" target={"_blank"} className="hover:opacity-80 active:opacity-80 opacity-100"><Github /></a>
             </div>
         </>
     )
