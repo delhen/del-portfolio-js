@@ -33,8 +33,8 @@ const PersonalCard = () => {
                 </div>
             </div>
             <div className='p-4 bg-sky-900 md:w-192 w-72 flex justify-center'>
-                <a href="https://www.linkedin.com/in/delian-hendardi/" target={"_blank"} className="hover:opacity-80 active:opacity-80 opacity-100"><Linkedin /></a>
-                <a href="https://github.com/delhen" target={"_blank"} className="hover:opacity-80 active:opacity-80 opacity-100"><Github /></a>
+                <a href="https://www.linkedin.com/in/delian-hendardi/" target={"_blank"} rel="noreferrer" className="hover:opacity-80 active:opacity-80 opacity-100"><Linkedin /></a>
+                <a href="https://github.com/delhen" target={"_blank"} rel="noreferrer" className="hover:opacity-80 active:opacity-80 opacity-100"><Github /></a>
             </div>
         </>
     )
