@@ -31,10 +31,10 @@ export default function Home() {
         </div>
         <br />
         <div className='flex md:flex-row flex-col justify-center text-center'>
-          <a href="/archive/CV_DELIAN_HENDARDI_WEB_DEVELOPER.pdf" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer</a>
-          <a href="/archive/CV_DELIAN_HENDARDI_DATA_SCIENTIST.pdf" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist</a>
-          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_WEB_DEVELOPER.docx" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer - Plain</a>
-          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_DATA_SCIENTIST.docx" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist - Plain</a>
+          <a href="/archive/CV_DELIAN_HENDARDI_WEB_DEVELOPER.pdf" rel="noreferrer" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer</a>
+          <a href="/archive/CV_DELIAN_HENDARDI_DATA_SCIENTIST.pdf" rel="noreferrer" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist</a>
+          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_WEB_DEVELOPER.docx" rel="noreferrer" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer - Plain</a>
+          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_DATA_SCIENTIST.docx" rel="noreferrer" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist - Plain</a>
         </div>
       </div>
       <div className='text-sky-50' id='portfolio'> 
@@ -46,33 +46,33 @@ export default function Home() {
         }
       }>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="http://coofeez.herokuapp.com/" target={"_blank"}>
+            <a href="http://coofeez.herokuapp.com/" rel="noreferrer" target={"_blank"}>
               <img className="rounded-t-lg" src="/images/coffeez.png" alt="" />
             </a>
             <div className="p-5">
-              <a href="http://coofeez.herokuapp.com/" target={"_blank"}>
+              <a href="http://coofeez.herokuapp.com/" rel="noreferrer" target={"_blank"}>
                 <h5 className="mb-2 text-xl font-bold tracking-tight">Coffeez</h5>
               </a>
               <p className="mb-3 font-normal">This is a CRUD web application. CRUD in this case is for stock updating. The user interface is only compatible for desktop. Development using PHP and Materialize CSS.</p>
             </div>
           </div>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="/ht-speech.html" target={'_blank'}>
+            <a href="/ht-speech.html" rel="noreferrer" target={'_blank'}>
               <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1585250003680-b12dbff01e65?ixlib=rb-1.2.1&dl=claudio-schwarz-FMJAYeRwtDY-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb" alt="" />
             </a>
             <div className="p-5">
-              <a href="/ht-speech.html" target={'_blank'}>
+              <a href="/ht-speech.html" rel="noreferrer" target={'_blank'}>
                 <h5 className="mb-2 text-xl font-bold tracking-tight">Sentiment Analysis About Hate Speech Tweets</h5>
               </a>
               <p className="mb-3 font-normal">Final exam for Information Retrieval college course. Analyzing whether hate speech tweet tends to be a negative sentiment. Using BERT pre-trained model for create a machine learning model for support the analysis.</p>
             </div>
           </div>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="/news-dataset-dl.html" target={'_blank'}>
+            <a href="/news-dataset-dl.html" target={'_blank'} rel="noreferrer">
               <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&dl=obi-pixel6propix-UEQvUtRs224-unsplash.jpg&w=640&q=80&fm=jpg&crop=entropy&cs=tinysrgb" alt="" />
             </a>
             <div className="p-5">
-              <a href="/news-dataset-dl.html" target={'_blank'}>
+              <a href="/news-dataset-dl.html" target={'_blank'} rel="noreferrer">
                 <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">News Classification</h5>
               </a>
               <p className="mb-3 font-normal">Final exam for Deep Learning college course. Make machine learning model for classifying news category. Using Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM).</p>
@@ -167,10 +167,10 @@ export default function Home() {
       <div className='p-8 text-left' id='certif'>
         <h2 className='font-semibold text-xl tracking-wide text-center underline'>CERTIFICATE</h2>
         <div className='flex md:flex-row flex-col justify-center p-4'>
-          <a href="https://drive.google.com/file/d/1yDwQijQPmppu0GCQa2B1wXuqAil9Xx8a/view?usp=sharing" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Hackathon BPJS Kesehatan 2021 Committee</a>
-          <a href="https://www.dicoding.com/certificates/2RVZKVM8OXD5" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Dicoding - Belajar Fundamental Front-End Web Development</a>
-          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABDVIZ2TRPSMQ" target={"_blank"} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Machine Learning With Python for Begineer</a>
-          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABINTP1KWBFUF" target={"_blank"} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Exploratory Data Analysis with Python for Beginner</a>
+          <a href="https://drive.google.com/file/d/1yDwQijQPmppu0GCQa2B1wXuqAil9Xx8a/view?usp=sharing" target={'_blank'} rel="noreferrer" className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Hackathon BPJS Kesehatan 2021 Committee</a>
+          <a href="https://www.dicoding.com/certificates/2RVZKVM8OXD5" target={'_blank'} rel="noreferrer" className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Dicoding - Belajar Fundamental Front-End Web Development</a>
+          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABDVIZ2TRPSMQ" target={"_blank"} rel="noreferrer" className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Machine Learning With Python for Begineer</a>
+          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABINTP1KWBFUF" target={"_blank"} rel="noreferrer" className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Exploratory Data Analysis with Python for Beginner</a>
         </div>
       </div>
       <hr />
