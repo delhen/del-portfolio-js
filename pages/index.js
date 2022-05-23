@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import PersonalCard from '../components/PersonalCard/PersonalCard'
 import Section from '../components/Section/Section'
 import PersonalCardParallax from '../datainfo/PersonalCardParallax'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -30,7 +31,10 @@ export default function Home() {
         </div>
         <br />
         <div className='flex md:flex-row flex-col justify-center text-center'>
-          <a href="#" className="bg-transparent hover:bg-sky-300 text-sky-500 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-500 hover:border-transparent rounded">Download CV</a>
+          <a href="/archive/CV_DELIAN_HENDARDI_WEB_DEVELOPER.pdf" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer</a>
+          <a href="/archive/CV_DELIAN_HENDARDI_DATA_SCIENTIST.pdf" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist</a>
+          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_WEB_DEVELOPER.docx" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Web Developer - Plain</a>
+          <a href="/archive/CV_PLAIN_DELIAN_HENDARDI_DATA_SCIENTIST.docx" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">CV Data Scientist - Plain</a>
         </div>
       </div>
       <div className='text-sky-50' id='portfolio'> 
@@ -42,36 +46,36 @@ export default function Home() {
         }
       }>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="#">
+            <a href="http://coofeez.herokuapp.com/" target={"_blank"}>
               <img className="rounded-t-lg" src="/images/coffeez.png" alt="" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Coffeez</h5>
+              <a href="http://coofeez.herokuapp.com/" target={"_blank"}>
+                <h5 className="mb-2 text-xl font-bold tracking-tight">Coffeez</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">This is a CRUD web application. CRUD in this case is for stock updating. It is only compatible for desktop interface. Development using PHP and Materialize CSS</p>
+              <p className="mb-3 font-normal">This is a CRUD web application. CRUD in this case is for stock updating. The user interface is only compatible for desktop. Development using PHP and Materialize CSS.</p>
             </div>
           </div>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="#">
+            <a href="/ht-speech.html" target={'_blank'}>
               <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1585250003680-b12dbff01e65?ixlib=rb-1.2.1&dl=claudio-schwarz-FMJAYeRwtDY-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb" alt="" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Sentiment Analysis About Hate Speech Tweets</h5>
+              <a href="/ht-speech.html" target={'_blank'}>
+                <h5 className="mb-2 text-xl font-bold tracking-tight">Sentiment Analysis About Hate Speech Tweets</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Final exam for Information Retrieval college course. Analyzing whether hate speech tweet tends to be a negative sentiment.</p>
+              <p className="mb-3 font-normal">Final exam for Information Retrieval college course. Analyzing whether hate speech tweet tends to be a negative sentiment. Using BERT pre-trained model for create a machine learning model for support the analysis.</p>
             </div>
           </div>
           <div className="max-w-sm rounded-lg shadow-md bg-sky-800 m-4">
-            <a href="#">
+            <a href="/news-dataset-dl.html" target={'_blank'}>
               <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&dl=obi-pixel6propix-UEQvUtRs224-unsplash.jpg&w=640&q=80&fm=jpg&crop=entropy&cs=tinysrgb" alt="" />
             </a>
             <div className="p-5">
-              <a href="#">
+              <a href="/news-dataset-dl.html" target={'_blank'}>
                 <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">News Classification</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Final exam for Deep Learning college course. Make machine learning model for news classification.</p>
+              <p className="mb-3 font-normal">Final exam for Deep Learning college course. Make machine learning model for classifying news category. Using Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM).</p>
             </div>
           </div>
         </div>
@@ -90,14 +94,10 @@ export default function Home() {
                 <p className='text-sm'><b>Framework:</b> React JS, React Native, CodeIgniter, Laravel, Bootstrap</p>
               </li>
               <li className='my-4'>
-                <p className='text-md font-semibold'>Machine Learning Engineer</p>
-                <p>Doing feature engineering and build a machine learning model based on given data. Having a focus on text processing (NLP). This skillset is in re-learn phase because it was never used for a year.</p>
+                <p className='text-md font-semibold'>Data Scientist</p>
+                <p>Have specialization in Machine Learning and Data Analyst. Doing feature engineering and build a machine learning model based on given data. Having a focus on text processing (NLP). This skillset is in re-learn phase because it was never used for a year.</p>
                 <p className='text-sm'><b>Programming Language:</b> Python</p>
-                <p className='text-sm'><b>Framework:</b> Tensorflow, Pandas, Scikit-learn</p>
-              </li>
-              <li className='my-4'>
-                <p className='text-md font-semibold'>UI Designer</p>
-                <p>This is a minor skillset. Can design web and mobile interface that satisfies end-user based on design theories and &quot;Oh this looks good&quot; principle. Tools that I use are Adobe XD and Figma.</p>
+                <p className='text-sm'><b>Framework:</b> Tensorflow, Keras, Pandas, Matplotlib, Numpy, Scikit-learn</p>
               </li>
             </ul>
           </div>
@@ -136,13 +136,13 @@ export default function Home() {
             <h3 className='text-xl font-semibold'>PT. Adicipta Inovasi Teknologi</h3>
             <p className='text-md'>Fullstack Web Developer (Internship)</p>
             <p className='text-sm font-light'>Feb 2021 - Feb 2022</p>
-            <p>Develop new features that are requested by a client to an existing app both for user interface (front-end) and data communication (back-end) and test its result. Provide files for deployment to the client. Do fixing when a bug has occurred. Development using C#, ASP.NET, and SQL Server.</p>
+            <p>Develop new features that are requested by a client to an existing app for multifinance business management both for user interface (front-end) and data communication (back-end) and test its result. Provide files for deployment to the client. Do fixing when a bug has occurred. Create SQL stored procedure for database processing. Development using C#, ASP.NET, and SQL Server.</p>
           </div>
           <div className='md:w-4/12 m-4'>
             <h3 className='text-xl font-semibold'>Hackathon BPJS Kesehatan 2021</h3>
             <p className='text-md'>Fullstack Web Developer (Freelance)</p>
             <p className='text-sm font-light'>Aug 2021 - Sept 2021</p>
-            <p>Develop web administration for participant management. Development both for user interface (front-end) and data communication (back-end). Support in creating an examiner for machine learning competition. Development using Javascript, PHP (CodeIgniter), MySQL, AdminLTE, and Python.</p>
+            <p>Develop web administration for participant management. Development both for user interface (front-end) and data communication (back-end). Support in creating an examiner for machine learning competition. Got positive feedbacks for the examiner from participans of Machine Learning competition. Development using Javascript, PHP (CodeIgniter), MySQL, AdminLTE, and Python.</p>
           </div>
         </div>
       </div>
@@ -164,48 +164,17 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div className='p-8 md:text-center' id="edu">
-        <h2 className='font-semibold text-xl tracking-wide text-center underline'>EDUCATION</h2>
-        <ul>
-          <li className='my-4'>
-            <p className='text-md font-semibold'>BINUS University</p>
-            <p>School of Computer Science</p>
-            <p>2018 - 2022</p>
-          </li>
-          <li className='my-4'>
-            <p className='text-md font-semibold'>SMAN 2 Kota Tangerang</p>
-            <p>Senior High School</p>
-            <p>2015 - 2018</p>
-          </li>
-          <li className='my-4'>
-            <p className='text-md font-semibold'>SMPN 4 Kota Tangerang</p>
-            <p>Junior High School</p>
-            <p>2012 - 2015</p>
-          </li>
-        </ul>
-      </div>
-      <hr />
-      <div className='p-8 text-left bg-sky-900 text-sky-50' id='certif'>
+      <div className='p-8 text-left' id='certif'>
         <h2 className='font-semibold text-xl tracking-wide text-center underline'>CERTIFICATE</h2>
         <div className='flex md:flex-row flex-col justify-center p-4'>
-          <a href="#" className="bg-transparent hover:bg-sky-700 text-sky-50 font-semibold hover:text-white py-2 px-4 mx-2 mt-2 border border-sky-50 hover:border-transparent rounded">Panitia Hackathon BPJS Kesehatan 2021</a>
-          <a href="#" className="bg-transparent hover:bg-sky-700 text-sky-50 font-semibold hover:text-white py-2 px-4 mx-2 mt-2 border border-sky-50 hover:border-transparent rounded">DQLab - Machine Learning With Python for Begineer</a>
-          <a href="#" className="bg-transparent hover:bg-sky-700 text-sky-50 font-semibold hover:text-white py-2 px-4 mx-2 mt-2 border border-sky-50 hover:border-transparent rounded">DQLab - Exploratory Data Analysis with Python for Beginner</a>
+          <a href="https://drive.google.com/file/d/1yDwQijQPmppu0GCQa2B1wXuqAil9Xx8a/view?usp=sharing" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Hackathon BPJS Kesehatan 2021 Committee</a>
+          <a href="https://www.dicoding.com/certificates/2RVZKVM8OXD5" target={'_blank'} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">Dicoding - Belajar Fundamental Front-End Web Development</a>
+          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABDVIZ2TRPSMQ" target={"_blank"} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Machine Learning With Python for Begineer</a>
+          <a href="https://academy.dqlab.id/Certificate_check_2/result/DQLABINTP1KWBFUF" target={"_blank"} className="bg-transparent hover:bg-sky-600 text-sky-700 font-semibold hover:text-white py-2 px-4 mx-4 mt-2 border border-sky-700 hover:border-transparent rounded">DQLab - Exploratory Data Analysis with Python for Beginner</a>
         </div>
       </div>
       <hr />
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
